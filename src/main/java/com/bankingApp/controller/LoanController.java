@@ -112,4 +112,9 @@ public class LoanController {
     public ResponseEntity<?> testEndpoint() {
         return ResponseEntity.ok(Map.of("message", "Loan API is working!"));
     }
+    
+    @PostMapping("/loanPercent")
+    public int calculateLoanPecent() {
+    	return 18;
+    }
 }
